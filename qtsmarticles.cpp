@@ -17,7 +17,7 @@ qtSmArticles::qtSmArticles(QWidget * parent) :
   ui->wordTextEdit->installEventFilter(&keypressEater);
   ui->wordTextEdit->setFocus();
 
-  QNetworkProxyFactory::setUseSystemConfiguration(true);
+//  QNetworkProxyFactory::setUseSystemConfiguration(true);
 
   connect(&keypressEater, SIGNAL(enterPressed()), this, SLOT(on_goOnButton_clicked()));
   connect(downloader.get(), SIGNAL(notifyFinishedDownload(QString)), this, SLOT(printResults(QString)));

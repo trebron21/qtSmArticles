@@ -21,3 +21,9 @@ HEADERS  += qtsmarticles.h \
     keypresseater.h
 
 FORMS    += qtsmarticles.ui
+
+DISTFILES += \
+    resources/r_e_s_icon.png \
+    resources/r_e_s_icon.ico
+
+RC_ICONS = resources/r_e_s_icon.ico

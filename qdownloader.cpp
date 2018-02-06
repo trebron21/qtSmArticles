@@ -1,3 +1,4 @@
+
 #include "qdownloader.h"
 
 #include <QNetworkAccessManager>
@@ -99,6 +100,7 @@ void QDownloader::onFinished(QNetworkReply * reply)
     case QNetworkReply::NoError:
     {
       qDebug("The information has been downloaded successfully.");
+      notifyFinishedDownload("The information has been downloaded successfully.");
       break;
     }
     default:

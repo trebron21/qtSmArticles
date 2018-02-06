@@ -426,7 +426,22 @@
    </palette>
   </property>
   <property name="windowTitle">
-   <string>qtSmArticles</string>
+   <string>SmArticles</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.850000000000000</double>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTextEdit" name="textEdit">
@@ -465,10 +480,14 @@
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(0, 170, 255);</string>
+background-color: rgb(0, 170, 255);
+</string>
     </property>
     <property name="text">
      <string>go on!</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QTextEdit" name="wordTextEdit">
